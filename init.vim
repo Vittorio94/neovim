@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tmhedberg/SimpylFold' "code folding
 Plug 'jiangmiao/auto-pairs' " automatic quote and braket completion
 Plug 'ryanoasis/vim-devicons'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 "Config Section
@@ -93,3 +94,5 @@ set encoding=utf8 "needed to display icons in nerdtree
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 set clipboard=unnamedplus "copy to clipboard
+
+let g:deoplete#enable_at_startup = 1 "enable deoplete
