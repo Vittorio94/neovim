@@ -1,2 +1,2 @@
 # neovim
-neovim configuration file
+contains my init.vim configuration file for **neovim**
