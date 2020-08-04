@@ -1,7 +1,7 @@
-call plug#begin("~/.vim/plugged")
+call plug#begin("~/.config/nvim/plugged")
+Plug 'mattn/emmet-vim'
 Plug 'arcticicestudio/nord-vim' "nord vim theme
 Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
-Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'itchyny/lightline.vim' "status bar
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -9,7 +9,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'tmhedberg/SimpylFold' "code folding
 Plug 'jiangmiao/auto-pairs' " automatic quote and braket completion
 Plug 'ryanoasis/vim-devicons'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'https://github.com/majutsushi/tagbar' "show class tree
+Plug 'https://github.com/Valloric/YouCompleteMe'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 "Config Section
@@ -22,7 +24,6 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'nord'
 
 colorscheme nord
-
 
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
@@ -86,9 +87,14 @@ set smartindent	" Enable smart-indent
 set smarttab	" Enable smart-tabs
 set softtabstop=4	" Number of spaces per Tab
 set expandtab	"spaces instead of tabs
+set foldmethod=indent "uses indentation to fold code
 "move up and downcode blocks with ctrl+alt+N/M
 nnoremap <C-A-n> }
 nnoremap <C-A-m> {
+
+"increase-decrease window height remap
+nnoremap <A-+> :resize +5<CR>
+nnoremap <A--> :resize -5<CR>
 
 set encoding=utf8 "needed to display icons in nerdtree
 set guifont=DroidSansMono\ Nerd\ Font\ 11
@@ -96,3 +102,10 @@ set guifont=DroidSansMono\ Nerd\ Font\ 11
 set clipboard=unnamedplus "copy to clipboard
 
 let g:deoplete#enable_at_startup = 1 "enable deoplete
+
+"emmet with ,,
+let g:user_emmet_leader_key=','
+
+"tagbar with ctrl+g
+nmap <C-s> :TagbarToggle<CR>
+
