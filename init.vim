@@ -88,6 +88,7 @@ set smarttab	" Enable smart-tabs
 set softtabstop=4	" Number of spaces per Tab
 set expandtab	"spaces instead of tabs
 set foldmethod=indent "uses indentation to fold code
+set scrolloff=5 "always show 5 lines when scrolling
 "move up and downcode blocks with ctrl+alt+N/M
 nnoremap <C-A-n> }
 nnoremap <C-A-m> {
