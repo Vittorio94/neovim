@@ -110,3 +110,6 @@ let g:user_emmet_leader_key=','
 "tagbar with ctrl+g
 nmap <C-s> :TagbarToggle<CR>
 
+"Auto close youcompleteme preview window
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
