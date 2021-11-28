@@ -29,3 +29,8 @@ python3 -m pip install --user --upgrade pynvim
 ## install a nerd font (to show icons in nerdtree plugin)
 go to https://github.com/ryanoasis/nerd-fonts#font-installation, pick and install one of the fonts
 
+## install silversearcher-ag to make fzf ignore node modules:
+```
+sudo apt-get install silversearcher-ag
+```
+
