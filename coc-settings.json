@@ -5,14 +5,19 @@
     "typescriptreact",
     "json",
     "javascriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "html"
   ],
   "eslint.filetypes": [
     "javascript",
     "typescript",
     "typescriptreact",
     "javascriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "html"
   ],
-  "coc.preferences.diagnostic.virtualText": true
+  "coc.preferences.diagnostic.virtualText": true,
+  "coc.preferences.snippets.enable": true,
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20
 }

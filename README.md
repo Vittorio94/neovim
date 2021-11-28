@@ -34,3 +34,8 @@ go to https://github.com/ryanoasis/nerd-fonts#font-installation, pick and instal
 sudo apt-get install silversearcher-ag
 ```
 
+## install coc extensions
+'''
+:CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css
+'''
+

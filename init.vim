@@ -82,6 +82,11 @@ let g:NERDTreeStatusline = ''
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+"remap file opening commands
+let g:NERDTreeMapOpenInTab = "<C-t>"
+let g:NERDTreeMapOpenSplit = "<C-h>"
+let g:NERDTreeMapOpenVSplit = "<C-v>"
+
 
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
